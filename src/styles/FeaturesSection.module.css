@@ -1,0 +1,34 @@
+.featuresSection {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.sectionTitle {
+    font-size: 2.5em;
+    color: #4417C1;
+    margin-bottom: 30px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.feature {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+        
+.feature h3 {
+    color: #4417C1;
+    font-size: 1.5em;
+}
+
+.feature p {
+    font-size: 1.1em;
+    color: #333;
+}

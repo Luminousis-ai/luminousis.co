@@ -1,0 +1,55 @@
+.welcomeSection {
+    background-color: #f8f9fa;
+    padding: 153px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 3rem;
+    color: #4417C1;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #ff8000;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.ctaButton {
+    background-color: #4417C1;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+    background-color: #3a1499;
+}
+.customFont {
+    font-weight: bold;
+    font-size: 4rem;
+}

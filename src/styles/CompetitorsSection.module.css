@@ -1,0 +1,154 @@
+.competitorsSection {
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+}
+
+.sectionTitle {
+    font-size: 2.5rem;
+    color: #4417C1;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.tableWrapper {
+    overflow-x: auto;
+    width: 70%;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .tableWrapper {
+        width: 100%;
+    }
+}
+
+.competitorsTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    table-layout: fixed;
+}
+
+.competitorsTable th,
+.competitorsTable td {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.competitorsTable th {
+    background-color: #4417C1;
+    color: white;
+    font-weight: bold;
+}
+
+.competitorsTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.competitorsTable tr:hover {
+    background-color: #e6e6e6;
+}
+
+.competitorsTable td:first-child {
+    font-weight: bold;
+    text-align: left;
+    background-color: transparent;
+}
+
+.checkmark {
+    color: #4CAF50;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cross {
+    color: #F44336;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.exclamation {
+    color: #FFC107;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    cursor: help;
+    .exclamation {
+        color: #FFC107;
+        font-size: 1.2rem;
+        font-weight: bold;
+        position: relative;
+        cursor: help;
+    }
+    
+    .exclamation::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: 125%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: #fff;
+        padding: 0.5rem;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        white-space: nowrap;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s;
+        pointer-events: none;
+    }
+    
+    .exclamation:hover::after,
+    .exclamation:active::after,
+    .exclamation:focus::after {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    @media (max-width: 768px) {
+        .exclamation::after {
+            width: 200px;
+            white-space: normal;
+            text-align: center;
+        }
+    }
+    
+    /* Dokunmatik cihazlar için özel stil */
+    @media (hover: none) {
+        .exclamation:active {
+            background-color: rgba(255, 193, 7, 0.2); /* Hafif sarı arka plan */
+        }
+        
+        .exclamation:active::after {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .competitorsTable {
+        font-size: 0.9rem;
+    }
+
+    .competitorsTable th,
+    .competitorsTable td {
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .competitorsTable {
+        font-size: 0.8rem;
+    }
+
+    .competitorsTable th,
+    .competitorsTable td {
+        padding: 0.6rem;
+    }
+}
