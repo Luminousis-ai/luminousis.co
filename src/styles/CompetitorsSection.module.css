@@ -77,6 +77,58 @@
     font-weight: bold;
     position: relative;
     cursor: help;
+    .exclamation {
+        color: #FFC107;
+        font-size: 1.2rem;
+        font-weight: bold;
+        position: relative;
+        cursor: help;
+    }
+    
+    .exclamation::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: 125%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: #fff;
+        padding: 0.5rem;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        white-space: nowrap;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s;
+        pointer-events: none;
+    }
+    
+    .exclamation:hover::after,
+    .exclamation:active::after,
+    .exclamation:focus::after {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    @media (max-width: 768px) {
+        .exclamation::after {
+            width: 200px;
+            white-space: normal;
+            text-align: center;
+        }
+    }
+    
+    /* Dokunmatik cihazlar için özel stil */
+    @media (hover: none) {
+        .exclamation:active {
+            background-color: rgba(255, 193, 7, 0.2); /* Hafif sarı arka plan */
+        }
+        
+        .exclamation:active::after {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
 }
 
 @media (max-width: 768px) {

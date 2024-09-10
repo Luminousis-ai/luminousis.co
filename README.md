@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Lis.Ai - Smart Digital Shopping Mall
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Lis.Ai, an innovative platform offering an AI-powered digital shopping experience. We're redefining e-commerce with features like visual search, virtual try-on, and personalized recommendations.
 
-## Available Scripts
+## About Us
 
-In the project directory, you can run:
+At Lis.Ai, we're a team of fresh computer engineering graduates from Istanbul Technical University, united by our passion for technology in fashion. Our mission is to adapt e-commerce to the changing world, making it more interactive, personalized, and user-friendly.
 
-### `npm start`
+We leverage AI to solve real problems, prioritizing solutions that enhance the shopping experience. Our approach blends cutting-edge AI innovations with intuitive design, offering seamless and comfortable e-commerce experiences that empower brands and captivate modern shoppers.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Our Key Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Visual Search: AI-based visual search technology for smooth product discovery
+- Virtual Try-On: Experience the best online shopping with our virtual try-on technology
+- AI-Driven Personalization: Receive fashion recommendations uniquely tailored to your preferences
+- Up-to-Date Insights: Get real-time updates on fashion trends and insights
 
-### `npm test`
+## Why Choose Lis.Ai?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Large Catalog: Access a wide range of products from various brands
+2. Clothing Focused: Specialized in fashion and apparel
+3. Innovative Features: Cutting-edge AI technologies for an enhanced shopping experience
+4. Personalization: Tailored recommendations based on your preferences and style
 
-### `npm run build`
+## Our Vision
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+We're committed to setting new standards for the future of fashion-based e-commerce. Our roadmap includes:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Beta Testing & Development (January 2025)
+- First Launch (May 2025)
+- Reaching 25,000 Daily Users (January 2026)
+- Reaching 250,000 Daily Users (January 2027)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+We're continuously improving and expanding our features to provide the best possible shopping experience.
 
-### `npm run eject`
+## Contact Us
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+We'd love to hear from you! Reach out to us at:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Email: [luminousisai@gmail.com](mailto:luminousisai@gmail.com)
+- Twitter: [@luminousis_ai](https://x.com/luminousis_ai)
+- Website: [Luminousis.co](https://luminousis.co)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Experience the future of fashion shopping with Lis.Ai - Your Smart Digital Shopping Mall.
