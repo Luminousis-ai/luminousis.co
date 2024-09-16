@@ -6,7 +6,7 @@
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 15px; 
     background-color: #4417C1;
@@ -18,44 +18,6 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-@media (min-width: 769px) {
-    .navbar {
-        padding: 10px;
-    }
-
-    .logo {
-        width: 8%; 
-        max-width: 100px;
-    }
-
-    .navLinks {
-        gap: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar {
-        padding: 15px 5px;
-        justify-content: center;
-    }
-
-    .navLinks {
-        gap: 5px;
-        width: 100%; 
-        justify-content: space-between; 
-    }
-
-    .navLinks li {
-        font-size: clamp(0.7rem, 3vw, 0.9rem);
-        padding: 0.3vw 0.5vw;
-        white-space: nowrap;
-    }
-
-    .logo {
-        display: none;
-    }
-}
-
 .logo {
     width: clamp(40px, 4vw + 10px, 60px);
     height: clamp(40px, 4vw + 10px, 60px);
@@ -64,14 +26,16 @@
     overflow: hidden;
     border: clamp(2px, 0.2vw + 1px, 4px) solid #ff8000;
     padding: clamp(2px, 0.2vw, 4px);
+    margin: 0 1vw;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer; 
 }
 
-@media (min-width: 769px) {
-    .logo {
-        max-width: 100px;
-        max-height: 100px;
-    }
+.logo:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
 }
+
 
 .navLinks {
     display: flex;
