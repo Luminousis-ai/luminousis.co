@@ -1,19 +1,17 @@
 import React from 'react';
 import styles from '../styles/RoadmapSection.module.css';
+import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../translations';
 
 const RoadmapSection = () => {
-    const roadmapItems = [
-        { date: 'January 2025', description: 'Beta Testing & Development' },
-        { date: 'May 2025', description: 'First Launch' },
-        { date: 'January 2026', description: 'Reaching 25,000 Daily Users' },
-        { date: 'January 2027', description: 'Reaching 250,000 Daily Users' },
-    ];
+    const { language } = useLanguage();
+    const t = translations[language];
 
     return (
         <section id="roadmap" className={styles.roadmapSection}>
-            <h2 className={styles.sectionTitle}>Feature Roadmap</h2>
+            <h2 className={styles.sectionTitle}>{t.roadmap.title}</h2>
             <div className={styles.timelineContainer}>
-                {roadmapItems.map((item, index) => (
+                {t.roadmap.items.map((item, index) => (
                     <div key={index} className={styles.timelineItem}>
                         <div className={styles.timelineContent}>
                             <div className={styles.timelineDot}></div>
@@ -24,11 +22,11 @@ const RoadmapSection = () => {
                 ))}
             </div>
             <div className={styles.infoBox}>
-                <h3>Continuous Improvement</h3>
+                <h3>{t.roadmap.continuous}</h3>
                 <ul>
-                    <li>Ongoing development and optimization across all stages</li>
-                    <li>Dynamically adding new features</li>
-                    <li>Expanding the user base and product catalog</li>
+                    {t.roadmap.improvements.map((improvement, index) => (
+                        <li key={index}>{improvement}</li>
+                    ))}
                 </ul>
             </div>
         </section>

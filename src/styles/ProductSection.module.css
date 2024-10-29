@@ -1,6 +1,8 @@
 .productShowcaseSection {
-    padding: 4rem 2rem;
+    padding-top: 80px;
+    padding-bottom: 1rem;
     background-color: #f8f9fa;
+    scroll-margin-top: 80px;
 }
 
 .sectionTitle {
