@@ -1,0 +1,53 @@
+.videoSection {
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.sectionTitle {
+    font-size: 2.5rem;
+    color: #4417C1;
+    margin-bottom: 2rem;
+}
+
+.videoWrapper {
+    width: 350px;
+    height: 757px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 38px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.videoWrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .videoWrapper {
+        width: 300px;
+        height: 649px;
+        max-width: 90vw;
+        max-height: calc(90vw * 2.164);
+    }
+}
+
+@media (max-width: 480px) {
+    .videoWrapper {
+        width: 280px;
+        height: 606px;
+        max-width: 85vw;
+        max-height: calc(85vw * 2.164);
+    }
+    
+    .sectionTitle {
+        font-size: 2rem;
+    }
+}

@@ -35,7 +35,7 @@
 
 .item {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -51,7 +51,7 @@
 
 .icon {
     font-size: 1.5rem;
-    margin-right: 1rem;
+    margin-right: 10px;
     color: #4417C1;
     transition: color 0.3s ease;
 }

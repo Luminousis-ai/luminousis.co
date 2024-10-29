@@ -1,19 +1,24 @@
 import React from 'react';
 import styles from '../styles/CompetitorsSection.module.css';
+import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../translations';
 
 const CompetitorsSection = () => {
+    const { language } = useLanguage();
+    const t = translations[language];
+
     const competitors = [
-        { name: 'E-Commerce Sites', largeCatalog: true, visualSearch: false, virtualTryOn: false, clothingFocused: false, innovativeFeatures: false },
-        { name: 'Brand Apps', largeCatalog: false, visualSearch: { value: '!', tooltip: 'Limited visual search capabilities' }, virtualTryOn: { value: '!', tooltip: 'Basic virtual try-on features' }, clothingFocused: true, innovativeFeatures: false },
-        { name: 'Lis.Ai', largeCatalog: true, visualSearch: true, virtualTryOn: true, clothingFocused: true, innovativeFeatures: true },
+        { name: t.competitors.companies.ecommerce, largeCatalog: true, visualSearch: { value: '!', tooltip: t.competitors.tooltips.limitedVisualSearch }, virtualTryOn: false, clothingFocused: false, innovativeFeatures: false },
+        { name: t.competitors.companies.brandApps, largeCatalog: false, visualSearch: { value: '!', tooltip: 'Limited visual search capabilities' }, virtualTryOn: { value: '!', tooltip: 'Basic virtual try-on features' }, clothingFocused: true, innovativeFeatures: false },
+        { name: t.competitors.companies.lisai, largeCatalog: true, visualSearch: true, virtualTryOn: true, clothingFocused: true, innovativeFeatures: true },
     ];
 
     const features = [
-        { name: 'Large Catalog', key: 'largeCatalog' },
-        { name: 'Visual Search', key: 'visualSearch' },
-        { name: 'Virtual-Try-On', key: 'virtualTryOn' },
-        { name: 'Clothing Focused', key: 'clothingFocused' },
-        { name: 'Innovative Features', key: 'innovativeFeatures' },
+        { name: t.competitors.features.largeCatalog, key: 'largeCatalog' },
+        { name: t.competitors.features.visualSearch, key: 'visualSearch' },
+        { name: t.competitors.features.virtualTryOn, key: 'virtualTryOn' },
+        { name: t.competitors.features.clothingFocused, key: 'clothingFocused' },
+        { name: t.competitors.features.innovativeFeatures, key: 'innovativeFeatures' },
     ];
 
     const renderCell = (value) => {
@@ -25,7 +30,7 @@ const CompetitorsSection = () => {
 
     return (
         <section id="competitors" className={styles.competitorsSection}>
-            <h2 className={styles.sectionTitle}>Competitors</h2>
+            <h2 className={styles.sectionTitle}>{t.competitors?.title || 'Competitors'}</h2>
             <div className={styles.tableWrapper}>
                 <table className={styles.competitorsTable}>
                     <thead>
