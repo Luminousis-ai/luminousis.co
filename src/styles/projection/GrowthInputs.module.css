@@ -1,0 +1,115 @@
+/* Churn Toggle Styles */
+.churnToggle {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/* Toggle Label Styles */
+.toggleLabel {
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Section Title Styles */
+.sectionTitle {
+    color: #4417C1; /* Title color */
+    font-size: 1.5rem; /* Increased font size */
+    margin-bottom: 1rem; /* Space below title */
+} 
+
+/* Growth Settings Container Styles */
+.growthSettings {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* Setting Card Styles */
+.settingCard {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: all 0.2s ease;
+}
+
+/* Setting Header Styles */
+.settingHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    gap: 1rem;
+}
+
+/* Setting Header Label Styles */
+.settingHeader label {
+    font-weight: 500;
+    color: #1a1a1a;
+    font-size: 1rem;
+    width: 120px; /* Sabit genişlik */
+}
+
+/* Setting Header Input With Icon Styles */
+.settingHeader .inputWithIcon {
+    flex: 1;
+    width: auto;
+}
+
+/* Range Slider Styles */
+.rangeSlider {
+    width: 100%;
+    max-width: 300px; /* Slider width constraint */
+    height: 6px;
+    -webkit-appearance: none;
+    background: #f0f0f0;
+    border-radius: 3px;
+    outline: none;
+    margin: 1rem 0;
+}
+
+/* Range Slider Thumb Styles */
+.rangeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4417C1;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: all 0.2s ease;
+}
+
+/* Churn Slider Thumb Styles */
+.churnSlider::-webkit-slider-thumb {
+    background: #ff4d4f;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    /* Setting Header Adjustments */
+    .settingHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+    
+    /* Setting Header Input With Icon Adjustments */
+    .settingHeader .inputWithIcon {
+        width: 100%;
+        max-width: none;
+    }
+    
+    /* Setting Card Adjustments */
+    .settingCard {
+        padding: 1rem;
+    }
+    
+    /* Range Slider Adjustments */
+    .rangeSlider {
+        max-width: none;
+    }
+}

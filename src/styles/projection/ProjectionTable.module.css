@@ -1,0 +1,151 @@
+.tableContainer {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.tableWrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.projectionTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.projectionTable th,
+.projectionTable td {
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #f0f0f0;
+    white-space: nowrap;
+    background-color: #f8f9fa;
+}
+
+/* Başlık grupları için stil */
+.headerGroup {
+    border: 1px solid rgba(224, 224, 224, 0.7);
+    border-radius: 8px;
+    margin: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Ana başlıklar için stil */
+.projectionTable th[rowspan="2"] {
+    font-weight: 600;
+    border: 1px solid rgba(224, 224, 224, 0.7);
+    border-radius: 8px;
+}
+
+/* Alt başlıklar için stil */
+.projectionTable th[colspan] {
+    font-weight: 600;
+    border: 1px solid rgba(224, 224, 224, 0.7);
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+/* Alt kategori başlıkları için stil */
+.projectionTable tr:nth-child(2) th {
+    font-weight: 500;
+    border: 1px solid rgba(224, 224, 224, 0.7);
+    border-radius: 8px;
+}
+
+/* Kategori grupları için border */
+.categoryGroup {
+    border-left: 1px solid rgba(224, 224, 224, 0.7);
+    border-right: 1px solid rgba(224, 224, 224, 0.7);
+}
+
+.projectionTable tbody tr:hover {
+    background-color: #f8faff;
+    transition: background-color 0.2s ease;
+}
+
+.tableActions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.exportButton {
+    background-color: #4417C1;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+
+.exportButton:hover {
+    background-color: #3612a0;
+}
+
+@media (max-width: 768px) {
+    .tableContainer {
+        padding: 0.5rem;
+        border-radius: 8px;
+        margin: 0;
+        width: 100%;
+    }
+    
+    .tableWrapper {
+        max-width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .projectionTable {
+        width: max-content;
+        min-width: 100%;
+        max-width: none;
+    }
+    
+    .projectionTable th,
+    .projectionTable td {
+        padding: 0.5rem;
+        font-size: 0.75rem;
+        white-space: nowrap;
+    }
+    
+    .headerGroup,
+    .projectionTable th[rowspan="2"],
+    .projectionTable th[colspan],
+    .projectionTable tr:nth-child(2) th {
+        padding: 0.5rem;
+        border-radius: 4px;
+    }
+    
+    .exportButton {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Tablet için ek medya sorgusu */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .projectionTable th,
+    .projectionTable td {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.85rem;
+    }
+}
+
+.sectionTitle {
+    color: #4417C1;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+} 

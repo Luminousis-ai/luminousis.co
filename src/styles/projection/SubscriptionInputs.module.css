@@ -1,0 +1,102 @@
+.distributionBarContainer {
+    margin-bottom: 1rem;
+    background: #f8f9fa;
+    padding: 0.75rem;
+    border-radius: 12px;
+}
+
+.distributionBar {
+    height: 24px;
+    background: #f1f1f1;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+}
+
+.distributionSegment {
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.plansContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.planCard {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.planHeader {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.planInputsRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.inputGroup {
+    margin-bottom: 0;
+}
+
+.inputGroup label {
+    display: block;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.distributionWarning {
+    color: #ff4d4f;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+.noSpinButton {
+    -moz-appearance: textfield;
+    width: 100%;
+    padding: 0.5rem 2rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    background: white;
+}
+
+.noSpinButton::-webkit-outer-spin-button,
+.noSpinButton::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.noSpinButton:focus {
+    outline: none;
+    border-color: #4417C1;
+    box-shadow: 0 0 0 2px rgba(68, 23, 193, 0.1);
+}
+
+.inputWithIcon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.inputIcon {
+    position: absolute;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.inputIcon:first-child {
+    left: 0.75rem;
+}
+
+.inputIcon:last-child {
+    right: 0.75rem;
+}

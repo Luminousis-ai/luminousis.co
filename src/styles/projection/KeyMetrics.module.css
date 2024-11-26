@@ -1,0 +1,92 @@
+.metricsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    padding-top: 0;
+}
+
+.metricGroup {
+    background: linear-gradient(145deg, #ffffff, #f5f7ff);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.metricGroup:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+}
+
+.groupTitle {
+    color: var(--primary-color, #4417C1);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(68, 23, 193, 0.1);
+    text-align: center;
+}
+
+.metricsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+}
+
+.metric {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 0.75rem;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 100%;
+}
+
+.metric:hover {
+    background: white;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.metricLabel {
+    color: var(--text-secondary, #666);
+    font-size: clamp(0.75rem, 1.5vw, 0.85rem);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.metricValue {
+    color: var(--accent-color, #ff8000);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* Tablet ve küçük ekranlar için */
+@media (max-width: 1024px) {
+    .metricsContainer {
+        grid-template-columns: 1fr;
+    }
+    
+    .metricsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobil için */
+@media (max-width: 640px) {
+    .metricsGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .metricGroup {
+        padding: 0.5rem;
+    }
+}

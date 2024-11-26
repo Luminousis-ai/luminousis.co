@@ -1,0 +1,72 @@
+# General Guidelines
+- All code must be written in **TypeScript**.
+- Use a framework that supports static site generation suitable for GitHub Pages deployment:
+  - **Gatsby.js** or **React with Create React App** (configured for static export).
+  - If using Next.js, configure it to export a static site using `next export`.
+
+# Component Structure
+- Design components to be **modular** and **reusable**.
+- Organize components into meaningful directories (e.g., /components, /layouts, /pages).
+
+# Styling
+- Utilize **Tailwind CSS** for styling.
+- Create a centralized theme file for colors, fonts, and common styles.
+- Apply styles using utility classes and extend them when necessary.
+
+# Media Integration
+- Use appropriate methods for optimizing images and media for static sites.
+- Store media assets in a dedicated directory (e.g., /public/media).
+
+# SEO Optimization
+- Implement proper **meta tags** and **Open Graph** tags.
+- Use **semantic HTML** elements to enhance accessibility and SEO.
+- Generate and include **sitemaps** and **robots.txt** files.
+
+# Investor-Focused Features
+- Include interactive charts using **Recharts** or **Chart.js** for financial data visualization.
+- Implement animations with **Framer Motion** to enhance engagement.
+- Ensure content is organized to highlight key investor information.
+
+# User Experience
+- Design with a **mobile-first** approach for responsiveness.
+- Implement **accessibility** best practices (WCAG compliance).
+- Enhance navigation with features like fixed headers and breadcrumbs.
+
+# Performance Optimization
+- Optimize assets and use **lazy loading** where appropriate.
+- Leverage browser caching and code-splitting techniques.
+
+# Testing
+- Write unit tests using **Jest** and **React Testing Library**.
+- Perform end-to-end testing with **Cypress**.
+- Ensure high code coverage and reliability.
+
+# Git Workflow
+- Commit all new code to the **new branch** created for this project.
+- Follow Git best practices:
+  - Write clear, concise commit messages.
+  - Use pull requests for code reviews.
+
+# Documentation
+- Comment code where necessary for clarity.
+- Update or create **README** files to document setup and usage instructions.
+- Maintain a changelog for tracking updates.
+
+# Accessibility
+- Use **ARIA labels** and roles where appropriate.
+- Ensure all interactive elements are keyboard-navigable.
+- Test site with screen readers to verify accessibility.
+
+# Coding Standards
+- Follow **ESLint** and **Prettier** configurations for consistent code style.
+- Adhere to the project's coding conventions and guidelines.
+
+# Deployment
+- Configure the site for deployment to **GitHub Pages**.
+- Ensure the build process outputs static files suitable for GitHub Pages.
+- Update the repository settings to enable GitHub Pages from the appropriate branch or directory.
+- Ensure environment variables and configurations are appropriately handled for a static site.
+
+# Notes
+- Avoid using server-side rendering or any features that require a Node.js server at runtime.
+- All dynamic data fetching should occur at build time or be handled client-side.

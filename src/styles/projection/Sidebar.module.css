@@ -1,0 +1,186 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 420px;
+    height: calc(100vh - 60px);
+    background-color: #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    z-index: 1000;
+    overflow-y: auto;
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+    padding-right: 0;
+}
+
+
+/* Overlay arka plan için */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.overlay.show {
+    display: block;
+}
+
+/* Kapatma butonu için */
+.closeButton {
+    display: none;
+    position: fixed;
+    right: -40px;
+    top: 20px;
+    background: #4417C1;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100vw;
+        top: 0;
+        height: 100vh;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        position: fixed;
+        z-index: 1001;
+        padding-top: 0;
+    }
+    
+    .overlay {
+        z-index: 1000;
+    }
+    
+    .overlay.show {
+        display: block;
+        pointer-events: auto;
+    }
+    
+    .dropdownContainer {
+        padding-top: 60px;
+        height: auto;
+        min-height: 100vh;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .dropdown {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .closeButton {
+        display: flex;
+        position: fixed;
+        right: 16px;
+        top: 70px;
+        z-index: 1002;
+    }
+ }
+
+.dropdownContainer {
+    padding: 24px;
+    height: 100%;
+    width: 420px;
+    box-sizing: border-box;
+}
+
+.dropdown {
+    width: 372px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.dropdown.active {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.dropdownHeader {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: all 0.2s ease;
+}
+
+.dropdownHeader:hover {
+    background: rgba(68, 23, 193, 0.04);
+}
+
+.dropdownHeader svg {
+    color: #4417C1;
+    font-size: 1.2rem;
+}
+
+.dropdownContent {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0 20px;
+}
+
+.dropdown.active .dropdownContent {
+    max-height: 2000px;
+    padding: 0 20px 20px;
+}
+
+.dropdown.active .dropdownHeader {
+    color: #4417C1;
+    border-bottom: 1px solid rgba(68, 23, 193, 0.1);
+}
+
+/* Modern Scrollbar Styles */
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: rgba(68, 23, 193, 0.1);
+    border-radius: 10px;
+    margin: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #4417C1;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    background-clip: padding-box;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #3612a0;
+}
+
+/* Firefox scrollbar */
+.sidebar {
+    scrollbar-width: thin;
+    scrollbar-color: #4417C1 rgba(68, 23, 193, 0.1);
+}
