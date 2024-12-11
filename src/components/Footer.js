@@ -4,10 +4,15 @@ import { useLanguage } from '../contexts/LanguageContext';
 import { translations } from '../translations';
 import { FaTwitter, FaLinkedin } from 'react-icons/fa';
 import logo from '../assets/logo.svg';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     const { language } = useLanguage();
     const t = translations[language]?.footer || translations['en'].footer;
+
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 
     return (
         <footer className={styles.footer}>
@@ -25,10 +30,10 @@ const Footer = () => {
                     <div className={styles.footerSection}>
                         <div className={styles.footerNavTitle}>{t.navigation.title}</div>
                         <nav className={styles.footerNav}>
-                            <a href="/">{t.navigation.home}</a>
-                            <a href="/about">{t.navigation.about}</a>
-                            <a href="/contact">{t.navigation.contact}</a>
-                            <a href="/career">{t.navigation.career}</a>
+                            <Link to="/" onClick={() => scrollToTop()}>{t.navigation.home}</Link>
+                            <Link to="/about" onClick={() => scrollToTop()}>{t.navigation.about}</Link>
+                            <Link to="/contact" onClick={() => scrollToTop()}>{t.navigation.contact}</Link>
+                            <Link to="/career" onClick={() => scrollToTop()}>{t.navigation.career}</Link>
                         </nav>
                     </div>
 

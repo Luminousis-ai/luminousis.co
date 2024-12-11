@@ -24,8 +24,8 @@ const ContactSection = () => {
         {
             icon: <FaTwitter />,
             label: 'Twitter',
-            value: '@LuminousisAi',
-            href: 'https://x.com/LuminousisAi',
+            value: '@lis_ai_co',
+            href: 'https://x.com/lis_ai_co',
         },
     ];
 

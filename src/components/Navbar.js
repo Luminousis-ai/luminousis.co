@@ -76,6 +76,10 @@ const Navbar = () => {
         };
     }, [isMenuOpen]);
 
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
     return (
         <nav className={`
             ${styles.navbar} 
@@ -91,7 +95,7 @@ const Navbar = () => {
             </button>
 
             <div className={styles.logoContainer}>
-                <Link to="/" onClick={() => setIsMenuOpen(false)}>
+                <Link to="/" onClick={() => { setIsMenuOpen(false); scrollToTop(); }}>
                     <img 
                         src={logo} 
                         alt="Lis AI Logo" 
@@ -104,17 +108,17 @@ const Navbar = () => {
             <div className={`${styles.navContent} ${isMenuOpen ? styles.active : ''}`}>
                 <ul className={styles.navLinks}>
                     <li>
-                        <Link to="/" onClick={() => setIsMenuOpen(false)}>
+                        <Link to="/" onClick={() => { setIsMenuOpen(false); scrollToTop(); }}>
                             {t.nav.home}
                         </Link>
                     </li>
                     <li>
-                        <Link to="/about" onClick={() => setIsMenuOpen(false)}>
+                        <Link to="/about" onClick={() => { setIsMenuOpen(false); scrollToTop(); }}>
                             {t.nav.about}
                         </Link>
                     </li>
                     <li>
-                        <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+                        <Link to="/contact" onClick={() => { setIsMenuOpen(false); scrollToTop(); }}>
                             {t.nav.contact}
                         </Link>
                     </li>

@@ -9,12 +9,6 @@
     margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-    .tableWrapper {
-        width: 100%;
-    }
-}
-
 .competitorsTable {
     width: 100%;
     border-collapse: separate;
@@ -128,7 +122,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .competitorsTable {
         font-size: 0.9rem;
     }
@@ -136,6 +130,10 @@
     .competitorsTable th,
     .competitorsTable td {
         padding: 0.8rem;
+    }
+
+    .tableWrapper {
+        width: 100%;
     }
 }
 

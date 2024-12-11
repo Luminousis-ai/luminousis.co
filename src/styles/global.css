@@ -2,6 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #F1E6D8;
     color: #333;
+
 }
 
 h1 {
@@ -41,4 +42,21 @@ p {
         font-size: 2.5rem;
     }
     
+}
+
+::-webkit-scrollbar {
+    width: 10px; /* Kaydırma çubuğu genişliği */
+}
+
+::-webkit-scrollbar-track {
+    background: #fdfcf3; /* Şeffaf arka plan */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #9e9b9b; /* Kaydırma çubuğu rengi */
+    border-radius: 10px; /* Kenar yuvarlama */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Üzerine gelindiğinde kaydırma çubuğu rengi */
 }
