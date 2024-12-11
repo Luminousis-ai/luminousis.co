@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.25cf7750.css",
-    "main.js": "/static/js/main.fd226c4e.js",
+    "main.css": "/static/css/main.f2315eda.css",
+    "main.js": "/static/js/main.d33464e8.js",
     "static/media/demo.gif": "/static/media/demo.8833bab5f8bfe317c631.gif",
     "static/media/market_size.webp": "/static/media/market_size.7591ed031c4f4fb24357.webp",
     "static/media/7.webp": "/static/media/7.326a5a4acebf9d559b2f.webp",
@@ -15,11 +15,11 @@
     "static/media/5.webp": "/static/media/5.2d0bacb3ef5be6deb8b7.webp",
     "static/media/logo.svg": "/static/media/logo.ca50b603295d0350bf49f19c71e7c206.svg",
     "index.html": "/index.html",
-    "main.25cf7750.css.map": "/static/css/main.25cf7750.css.map",
-    "main.fd226c4e.js.map": "/static/js/main.fd226c4e.js.map"
+    "main.f2315eda.css.map": "/static/css/main.f2315eda.css.map",
+    "main.d33464e8.js.map": "/static/js/main.d33464e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.25cf7750.css",
-    "static/js/main.fd226c4e.js"
+    "static/css/main.f2315eda.css",
+    "static/js/main.d33464e8.js"
   ]
 }
