@@ -9,7 +9,7 @@ const RoadmapSection = () => {
 
     return (
         <section id="roadmap" className={styles.roadmapSection}>
-            <h2 className={styles.sectionTitle}>{t.roadmap.title}</h2>
+            <h2>{t.roadmap.title}</h2>
             <div className={styles.timelineContainer}>
                 {t.roadmap.items.map((item, index) => (
                     <div key={index} className={styles.timelineItem}>
@@ -20,14 +20,6 @@ const RoadmapSection = () => {
                         </div>
                     </div>
                 ))}
-            </div>
-            <div className={styles.infoBox}>
-                <h3>{t.roadmap.continuous}</h3>
-                <ul>
-                    {t.roadmap.improvements.map((improvement, index) => (
-                        <li key={index}>{improvement}</li>
-                    ))}
-                </ul>
             </div>
         </section>
     );

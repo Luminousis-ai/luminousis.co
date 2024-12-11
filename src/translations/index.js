@@ -1,241 +1,218 @@
 export const translations = {
     en: {
         nav: {
+            home: 'Home',
             about: 'About Us',
-            product: 'Product',
-            roadmap: 'Roadmap',
             contact: 'Contact'
         },
         welcome: {
-            title: 'Smart Digital Shopping Mall',
-            subtitle: 'AI-Powered Shopping Experience',
-            description: 'Experience the future of shopping with our AI-powered digital mall, combining advanced technology with personalized experiences.',
-            ctaButton: 'Learn More'
+            title: 'AI Powered Fashion Solutions',
+            description: 'Discover cutting-edge AI personalization with our virtual dressing room and visual search',
+        },
+        product: {
+            title: "Our Product",
+            subtitle: [
+                "Visual Search",
+                "Virtual Dressing Room",
+                "Social Media",
+                "Embedded Visual Search",
+            ],
+            description: [
+                "Take a photo or upload an image, and our AI instantly finds similar products for you. Discover your favorite styles effortlessly.",
+                "See how clothes look on you instantly with our Virtual Try-On. Shop confidently and find your perfect fit.",
+                "Explore trending styles directly from social media posts. Our AI-powered feature identifies outfits instantly and connects you with the latest fashion, creating a seamless blend of social interaction and shopping.",
+                "Say goodbye to chasing influencer links. Our AI-powered social fashion search instantly identifies outfits from social media posts, connecting you directly to the products you love.",
+            ]
         },
         about: {
             title: 'About Us',
-            content1: 'We are a team of fresh computer engineers graduated from Istanbul Technical University, united by a passion for technology in fashion. At Lis.Ai, our mission is to adapt e-commerce to the changing world, making it more interactive, personalized, and user-friendly.',
-            content2: 'We leverage AI to solve real problems, prioritizing solutions that enhance the shopping experience rather than creating technology in search of a problem. Our approach blends cutting-edge AI innovations with intuitive design, offering seamless and comfortable e-commerce experiences that empower brands and captivate modern shoppers.',
-            content3: 'At Lis.Ai, we are committed to setting new standards for the future of fashion-based e-commerce.'
+            content1: 'Lis AI is a team of passionate engineers from Istanbul Technical University, united by a vision to transform fashion e-commerce. Our mission is to make online shopping more interactive, personalized, and seamless through innovative AI-driven solutions.',
+            content2: 'By combining cutting-edge technology with intuitive design, we address real challenges in the fashion industry, creating effortless shopping experiences that empower brands and captivate modern consumers. At Lis AI, we are redefining the future of fashion-based e-commerce with our cutting-edge solution.',
         },
         problemSolution: {
+            title: "Problems and Solutions",
             problems: [
                 {
-                    title: "Lack of Personalization and Interaction",
-                    description: "Lack of personalization and interactive features in Fashion Retail"
+                    description: "Consumers struggle to seamlessly find and buy the exact outfits they see in everyday life"
                 },
                 {
-                    title: "Ineffective Product Discovery",
-                    description: "Ineffective product discovery through traditional search methods"
+                    description: "Shoppers lack an easy way to visualize how clothes will look on them before buying"
                 },
-                {
-                    title: "Challenges in Trend Prediction",
-                    description: "Challenges in trend prediction and rapid design adaptation"
-                }
             ],
             solutions: [
-                {
-                    title: "AI-Based Personalization",
-                    description: "AI-based personalization system tailored to individual shopping experiences"
+                {   
+                    description: "Revolutionizing product discovery with advanced Visual Search methods"
                 },
                 {
-                    title: "Visual Search Technology",
-                    description: "Enhanced product discovery through visual search technology"
+                    description: "Enhancing online shopping experiences through Virtual Try-On technology"
                 },
-                {
-                    title: "Sales Data Analysis",
-                    description: "Sales data analysis to predict new trends and inform design decisions"
-                }
             ]
         },
         competitors: {
             title: 'Competitors',
             features: {
-                largeCatalog: 'Large Catalog',
                 visualSearch: 'Visual Search',
                 virtualTryOn: 'Virtual-Try-On',
+                largeCatalog: 'Product Variety',
                 clothingFocused: 'Clothing Focused',
-                innovativeFeatures: 'Innovative Features'
             },
             companies: {
                 ecommerce: 'E-Commerce Sites',
                 brandApps: 'Brand Apps',
-                lisai: 'Lis.Ai'
+                googleLens: 'Google Lens',
+                lisai: 'Lis AI'
             },
             tooltips: {
                 limitedVisualSearch: 'Limited visual search capabilities',
                 basicVirtualTryOn: 'Basic virtual try-on features'
             }
         },
-        product: {
-            title: "Product",
-            subtitle: "Lis.Ai is a Smart Digital Shopping Mall",
-            features: [
-                "Visual search for smooth discovery",
-                "Virtual-Try-On for best shopping experience",
-                "AI-Driven fashion recommendations",
-                "Up-to-date fashion insights",
-                "Engaging and interactive features",
-                "Uniquely tailored shopping experience"
-            ]
-        },
         targetMarket: {
             title: 'Target Market',
             fashionBrands: {
-                title: 'Fashion Brands',
+                title: 'Analytics',
                 items: [
-                    'Corporate Companies',
+                    'Fashion Companies',
                     'Local Boutiques',
-                    'Independent textile manufacturers',
-                    'E-commerce companies'
+                    'Textile Manufacturers',
+                    'E-commerce Companies'
                 ]
             },
             onlineCustomers: {
-                title: 'Online Customers',
+                title: 'App Users',
                 items: [
-                    'Gen Z (Aged 16-24)',
-                    'Young Adults (Aged 24-35)',
-                    'Trendsetters and Influencers',
-                    'Fashion Enthusiasts'
+                    'Aged 18-45',
+                    'Style Seekers',
+                    'Influencers',
                 ]
             },
-            marketSize: {
-                title: 'Market Size',
-                tam: 'Total Available Market (TAM)',
-                sam: 'Serviceable Available Market (SAM)',
-                som: 'Serviceable Obtainable Market (SOM)',
-                values: {
-                    tam: '$15B ',
-                    sam: '$1B',
-                    som: '$250M'
-                }
-            }
+            advertisement: {
+                title: 'Advertisement',
+                items: [
+                    'Fashion Companies',
+                    'E-commerce Companies',
+                ]
+            },
         },
         timing: {
-            title: "Timing",
+            title: "Why Now?",
             points: [
-                "Growing demand for personalized services",
-                "Rising of fashion based E-commerce",
-                "Need for flexible e-commerce services",
-                "Consumer desire for interactive experiences",
-                "Power of AI-driven digital services"
+                "AI adoption in fashion e-commerce remains underutilized",
+                "Consumers struggle to find and visualize products online",
+                "AI technologies are now accessible and scalable",
             ]
         },
         business: {
             title: "Business Model",
-            subtitle: "What we offer to:",
             offerings: [
+                {
+                    title: "Analytics",
+                    items: [
+                        "User Insights",
+                        "Market Trends",
+                        "Personalized Data",
+                    ]
+                },
                 {
                     title: "App Users",
                     items: [
-                        "Free App Access",
-                        "Subscription Model",
+                        "Free Access",
+                        "Subscription Plans",
                         "Premium Features",
-                        "User Engagement"
                     ]
                 },
                 {
-                    title: "Fashion Brands (Advertisement)",
+                    title: "Advertisement",
                     items: [
-                        "Dedicated Brand Pages",
-                        "Premium Visibility",
-                        "Showcase Collections",
-                        "Promote Special Offers"
-                    ]
-                },
-                {
-                    title: "Fashion Brands (Market)",
-                    items: [
-                        "Detailed User Analytics",
-                        "Market Insights",
-                        "Trend Tracking",
-                        "Personalized Products"
+                        "Brand Pages",
+                        "High Visibility",
+                        "Promotions",
                     ]
                 }
             ]
         },
+        marketSize: {
+            title: "Market Size",
+            description: "The number of users in the fashion segment of the e-commerce market is projected to reach 2.25 billion, reflecting the potential of a newly emerging AI-driven sector."
+        },
         roadmap: {
             title: "Feature Roadmap",
-            continuous: "Continuous Improvement",
             items: [
-                { date: "January 2025", description: "Beta Testing & Development" },
-                { date: "May 2025", description: "First Launch" },
-                { date: "January 2026", description: "Reaching 25,000 Daily Users" },
-                { date: "January 2027", description: "Reaching 250,000 Daily Users" }
+                { date: "Q1 2025", description: "Tests & Development" },
+                { date: "Q2 2025", description: "Initial Launch in Turkey" },
+                { date: "Q4 2025", description: "Launch in the USA" },
+                { date: "Q2 2026", description: "Expansion into Europe" }
             ],
-            improvements: [
-                "Ongoing development and optimization across all stages",
-                "Dynamically adding new features",
-                "Expanding the user base and product catalog"
-            ]
         },
         contact: {
             title: "Contact Us",
             rightReserved: "All rights reserved"
         },
+        career: {
+            title: "Career Opportunities",
+            noListings: "Currently, there are no job listings available. Please check back later.",
+            noListingsDescription: "Currently, there are no job listings available. Please check back later."
+        },
+        footer: {
+            navigation: {
+                title: "Navigation",
+                home: "Home",
+                about: "About Us",
+                contact: "Contact",
+                career: "Career"
+            },
+            contact: "Contact",
+            followUs: "Follow Us",
+            rights: "All rights reserved"
+        }
     },
     tr: {
         nav: {
+            home: 'Anasayfa',
             about: 'Hakkımızda',
-            product: 'Ürün',
-            roadmap: 'Yol Haritası',
             contact: 'İletişim'
         },
         welcome: {
-            title: 'Akıllı Dijital Alışveriş Merkezi',
-            subtitle: 'Yapay Zeka Destekli Alışveriş Deneyimi',
-            description: 'Gelişmiş teknolojiyi kişiselleştirilmiş deneyimlerle birleştiren yapay zeka destekli dijital alışveriş merkezimizle alışverişin geleceğini deneyimleyin.',
-            ctaButton: 'Daha Fazla Bilgi'
+            title: 'AI Powered Fashion Solutions',
+            description: 'Sanal giyinme odası ve gelişmiş görsel arama ile ileri seviye yapay zekâ kişiselleştirmesini keşfedin',
         },
         about: {
             title: 'Hakkımızda',
-            content1: 'İstanbul Teknik Üniversitesi\'nden mezun, moda teknolojisine tutkuyla bağlı genç bilgisayar mühendislerinden oluşan bir ekibiz. Lis.Ai olarak misyonumuz, e-ticareti değişen dünyaya uyumlu hale getirerek daha etkileşimli, kişiselleştirilmiş ve kullanıcı dostu bir deneyim sunmaktır.',
-            content2: 'Yapay zekayı gerçek sorunları çözmek için kullanıyor, sorun arayan bir teknoloji yaratmak yerine alışveriş deneyimini geliştiren çözümlere öncelik veriyoruz. Yaklaşımımız, en son yapay zeka yeniliklerini sezgisel tasarımla birleştirerek, markaları güçlendiren ve modern alışverişçileri cezbeden sorunsuz ve rahat e-ticaret deneyimleri sunuyor.',
-            content3: 'Lis.Ai olarak, moda tabanlı e-ticaretin geleceği için yeni standartlar belirlemeye kararlıyız.'
+            content1: 'Lis AI, İstanbul Teknik Üniversitesi\'nden tutkulu mühendislerinden oluşan ve moda e-ticaretini dönüştürme vizyonuyla bir araya gelmiş bir ekipten oluşmaktadır. Misyonumuz, yenilikçi yapay zeka destekli çözümlerle çevrimiçi alışverişi daha etkileşimli, kişiselleştirilmiş ve sorunsuz bir hale getirmektir',
+            content2: 'Son teknoloji yapay zekayı sezgisel tasarımla birleştirerek, moda sektöründeki gerçek sorunlara çözüm sunuyor ve markaları güçlendirirken modern tüketicileri cezbeden zahmetsiz alışveriş deneyimleri yaratıyoruz. Lis AI olarak, öncü çözümümüzle moda odaklı e-ticaretin geleceğini yeniden tanımlıyoruz.',
         },
         problemSolution: {
+            title: "Problemler ve Çözümleri",
             problems: [
                 {
-                    title: "Kişiselleştirme ve Etkileşim Eksikliği",
-                    description: "Moda Perakendesinde kişiselleştirme ve etkileşimli özelliklerin eksikliği"
+                    description: "Tüketiciler, günlük hayatta gördükleri kıyafetleri kolayca bulup satın almakta zorlanıyor"
                 },
                 {
-                    title: "Etkisiz Ürün Keşfi",
-                    description: "Geleneksel arama yöntemleriyle etkisiz ürün keşfi"
+                    description: "Alışveriş yapanlar, kıyafetlerin üzerlerinde nasıl görüneceğini satın almadan önce kolayca görselleştirecek bir yönteme sahip değil"
                 },
-                {
-                    title: "Trend Tahmininde Zorluklar",
-                    description: "Trend tahmini ve hızlı tasarım adaptasyonunda yaşanan zorluklar"
-                }
             ],
             solutions: [
                 {
-                    title: "Yapay Zeka Tabanlı Kişiselleştirme",
-                    description: "Bireysel alışveriş deneyimlerine göre uyarlanmış yapay zeka tabanlı kişiselleştirme sistemi"
+                    description: "Gelişmiş Görsel Arama yöntemleriyle ürün keşfini devrimleştiriyoruz"
                 },
                 {
-                    title: "Görsel Arama Teknolojisi",
-                    description: "Görsel arama teknolojisi ile geliştirilmiş ürün keşfi"
+                    description: "Sanal Deneme odası teknolojisiyle online alışveriş deneyimlerini geliştiriyoruz"
                 },
-                {
-                    title: "Satış Verisi Analizi",
-                    description: "Yeni trendleri tahmin etmek ve tasarım kararlarını yönlendirmek için satış verisi analizi"
-                }
             ]
         },
         competitors: {
             title: 'Rakipler',
             features: {
-                largeCatalog: 'Geniş Katalog',
                 visualSearch: 'Görsel Arama',
                 virtualTryOn: 'Sanal Kıyafet Deneme',
+                largeCatalog: 'Katalog Çeşitliliği',
                 clothingFocused: 'Giyim Odaklılık',
-                innovativeFeatures: 'Yenilikçi Özellikler'
             },
             companies: {
                 ecommerce: 'E-Ticaret Siteleri',
                 brandApps: 'Marka Uygulamaları',
-                lisai: 'Lis.Ai'
+                googleLens: 'Google Lens',
+                lisai: 'Lis AI'
             },
             tooltips: {
                 limitedVisualSearch: 'Sınırlı görsel arama özellikleri',
@@ -243,111 +220,117 @@ export const translations = {
             }
         },
         product: {
-            title: "Ürün",
-            subtitle: "Lis.Ai Akıllı Dijital Alışveriş Merkezi",
-            features: [
-                "Kolay keşif için görsel arama",
-                "En iyi alışveriş deneyimi için sanal deneme",
-                "Yapay zeka destekli moda önerileri",
-                "Güncel moda içgörüleri",
-                "İlgi çekici ve etkileşimli özellikler",
-                "Benzersiz kişiselleştirilmiş alışveriş deneyimi"
+            title: "Ürünümüz",
+            subtitle: [
+                "Görsel Arama",
+                "Sanal Deneme Odası",
+                "Sosyal Medya",
+                "Gömülü Görsel Arama",
+            ],
+            description: [
+                "Fotoğraf çekin veya bir görüntü yükleyin, yapay zeka anında benzer ürünleri sizin için bulsun. Sevdiğiniz stilleri zahmetsizce keşfedin.",
+                "Kıyafetlerin üzerinizde nasıl göründüğünü anında görün. Kendinizden emin alışveriş yapın ve mükemmel uyumu bulun.",
+                "Sosyal medya gönderilerinden en trend stilleri kolayca keşfedin. Yapay zeka destekli özelliğimiz kıyafetleri anında tanır ve sizi en yeni modayla buluşturur. Sosyal etkileşim ve alışverişi sorunsuz bir şekilde birleştiriyoruz.",
+                "Influencer linklerini takip etme zahmetine son! Yapay zeka destekli sosyal moda arama özelliğimiz, sosyal medya gönderilerindeki kıyafetleri anında tanır ve sizi doğrudan sevdiğiniz ürünlere bağlar. Zahmetsizce keşfedin, etkileşim kurun ve alışveriş yapın",
             ]
         },
         targetMarket: {
             title: 'Hedef Pazar',
             fashionBrands: {
-                title: 'Moda Markaları',
+                title: 'Analitikler',
                 items: [
-                    'Kurumsal Şirketler',
+                    'Moda Sirketleri',
                     'Yerel Butikler',
-                    'Bağımsız Tekstil Üreticileri',
-                    'E-ticaret Şirketleri'
+                    'Tekstil Sanayılar',
+                    'E-ticaret Sirketleri'
                 ]
             },
             onlineCustomers: {
-                title: 'Online Müşteriler',
+                title: 'Uygulama Kullanıcıları',
                 items: [
-                    'Z Kuşağı (16-24 Yaş)',
-                    'Genç Yetişkinler (24-35 Yaş)',
-                    'Trend Belirleyiciler ve Etkileyiciler',
-                    'Moda Tutkunları'
+                    '18-45 yaş arası',
+                    'Moda Meraklıları',
+                    'Fenomenler',
                 ]
             },
-            marketSize: {
-                title: 'Pazar Büyüklüğü',
-                tam: 'Toplam Erişilebilir Pazar (TAM)',
-                sam: 'Hizmet Verilebilir Pazar (SAM)',
-                som: 'Elde Edilebilir Pazar (SOM)',
-                values: {
-                    tam: '15 Milyar $',
-                    sam: '1 Milyar $',
-                    som: '250 Milyon $'
-                }
-            }
+            advertisement: {
+                title: 'Reklamlar',
+                items: [
+                    'Moda Sirketleri',
+                    'E-ticaret Sirketleri',
+                ]
+            },
         },
         timing: {
-            title: "Zamanlama",
+            title: "Neden Şimdi?",
             points: [
-                "Kişiselleştirilmiş hizmetlere artan talep",
-                "Moda tabanlı e-ticaretin yükselişi",
-                "Esnek e-ticaret hizmetlerine ihtiyaç",
-                "Etkileşimli deneyim isteği",
-                "YZ destekli dijital hizmetlerin gücü"
+                "Moda e-ticaretinde yapay zeka kullanımı hala yeterince değerlendirilmiyor",
+                "Tüketiciler çevrimiçi ürünleri bulmak ve görselleştirmekte zorlanıyor",
+                "Yapay zeka teknolojileri artık erişilebilir ve ölçeklenebilir durumda",
             ]
         },
         business: {
             title: "İş Modeli",
-            subtitle: "Sunduklarımız:",
             offerings: [
+                {
+                    title: "Analitkler",
+                    items: [
+                        "Kullanıcı Analizleri",
+                        "Pazar Takibi",
+                        "Kişiselleştirilmiş Veriler",
+                    ]
+                },
                 {
                     title: "Uygulama Kullanıcıları",
                     items: [
-                        "Ücretsiz Uygulama Erişimi",
-                        "Abonelik Modeli",
+                        "Ücretsiz Erişim",
+                        "Abonelik Planları",
                         "Premium Özellikler",
-                        "Kullanıcı Etkileşimi"
                     ]
                 },
                 {
-                    title: "Moda Markaları (Reklam)",
+                    title: "Reklamlar",
                     items: [
-                        "Özel Marka Sayfaları",
-                        "Premium Görünürlük",
-                        "Koleksiyon Vitrini",
-                        "Özel Teklifleri Tanıtma"
-                    ]
-                },
-                {
-                    title: "Moda Markaları (Pazar)",
-                    items: [
-                        "Detaylı Kullanıcı Analitiği",
-                        "Pazar İçgörüleri",
-                        "Trend Takibi",
-                        "Kişiselleştirilmiş Ürünler"
+                        "Marka Sayfaları",
+                        "Yüksek Görünürlük",
+                        "Öne Çıkarma",
                     ]
                 }
             ]
         },
+        marketSize: {
+            title: "Pazar Büyüklüğü",
+            description: "Moda e-ticaret pazarı hızla büyüyor ve 2025 yılına kadar 1.2 trilyon dolara ulaşması bekleniyor"
+        },
         roadmap: {
             title: "Yol Haritası",
-            continuous: "Sürekli İyileştirme",
             items: [
-                { date: "Ocak 2025", description: "Beta Testi & Geliştirme" },
-                { date: "Mayıs 2025", description: "İlk Lansman" },
-                { date: "Ocak 2026", description: "25.000 Günlük Kullanıcıya Ulaşma" },
-                { date: "Ocak 2027", description: "250.000 Günlük Kullanıcıya Ulaşma" }
+                { date: "Q1 2025", description: "Test & Geliştirme" },
+                { date: "Q2 2025", description: "Türkiye'de İlk Lansman" },
+                { date: "Q4 2025", description: "ABD'de Lansman" },
+                { date: "Q2 2026", description: "Avrupa'ya Genişleme" }
             ],
-            improvements: [
-                "Tüm aşamalarda devam eden geliştirme ve optimizasyon",
-                "Dinamik olarak yeni özellikler ekleme",
-                "Kullanıcı tabanını ve ürün kataloğunu genişletme"
-            ]
         },
         contact: {
             title: "Bizimle İletişime Geçin",
             rightReserved: "Tüm hakları saklıdır"
         },
-
+        footer:{ 
+        navigation: {
+            title: "Navigasyon",
+            home: "Anasayfa",
+            about: "Hakkımızda",
+            contact: "İletişim",
+            career: "Kariyer"
+        },
+        contact: "İletişim",
+        followUs: "Takip Edin",
+        rights: "Tüm hakları saklıdır"
+        },
+        career: {
+            title: "Kariyer Fırsatları",
+            noListings: "Şu anda mevcut iş ilanı bulunmamaktadır. Lütfen daha sonra tekrar kontrol edin.",
+            noListingsDescription: "Şu anda mevcut iş ilanı bulunmamaktadır. Lütfen daha sonra tekrar kontrol edin."
+        }
     }
 }

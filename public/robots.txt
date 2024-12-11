@@ -1,4 +1,9 @@
 User-agent: *
+Disallow:
+
 Allow: /
-Allow: /projection
-Sitemap: https://luminousis.co/sitemap.xml
+Allow: /about
+Allow: /contact
+Allow: /career
+
+Sitemap: https://lisai.co/sitemap.xml

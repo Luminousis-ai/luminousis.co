@@ -6,16 +6,19 @@
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0.5rem 1.5rem;
-    background-color: #4417C1;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
+    right: 0;
+    transform: translateY(0);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 1100;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: none;
 }
 
 .logoContainer {
@@ -44,40 +47,54 @@
 .navContent {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 2.5rem;
+    padding: 0 2rem;
 }
 
 .navLinks {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 .navLinks li {
-    color: white;
+    color: #ff8000;
     font-size: clamp(14px, 1vw + 2px, 16px);
     cursor: pointer;
-    transition: color 0.3s ease;
-    padding: 0.5rem;
-    font-weight: bold;
+    transition: all 0.2s ease;
+    padding: 0.6rem 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    letter-spacing: 0.3px;
 }
 
-.navLinks li:hover {
+.navLinks li a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    position: relative;
+    padding: 0.2rem 0;
+}
+
+.navLinks li a:hover {
     color: #ff8000;
 }
 
-.menuButton {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 0.5rem;
+.navLinks li a::after {
+    content: '';
     position: absolute;
-    right: 1rem;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #ff8000;
+    transition: width 0.2s ease;
+}
+
+.navLinks li a:hover::after {
+    width: 100%;
 }
 
 .languageSwitch {
@@ -98,7 +115,7 @@
 .languageOption {
     padding: 0.2rem 0.5rem;
     font-size: 0.9rem;
-    color: #4417C1;
+    color: #666;
     border-radius: 12px;
     transition: all 0.3s ease;
     font-weight: bold;
@@ -109,59 +126,123 @@
     color: white;
 }
 
+.menuButton {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #333;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 2px;
+    position: fixed;
+    right: 1.5rem;
+    top: 1rem;
+    z-index: 1200;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.menuButton:hover {
+    color: #ff8000;
+    transform: scale(1.1);
+}
+
 @media (max-width: 768px) {
+    .navbar {
+        padding: 0.8rem 1.5rem;
+        justify-content: flex-start;
+    }
+
     .menuButton {
-        display: block;
+        display: flex;
+        color: #666;
+    }
+
+    .menuButton:hover {
+        color: #ff8000;
+        background-color: rgba(255, 128, 0, 0.1);
+        transform: scale(1.1);
     }
 
     .navContent {
         position: fixed;
-        top: 52px;
+        top: 0;
         right: -100%;
-        height: calc(100vh - 60px);
-        width: 60%;
-        max-width: 300px;
+        height: 100vh;
+        width: 100%;
         background: #4417C1;
+        backdrop-filter: blur(10px);
         flex-direction: column;
-        padding: 7rem 1.5rem;
-        transition: right 0.3s ease;
-        box-shadow: -2px 0 10px rgba(0,0,0,0.2);
-
+        padding: 5rem 2rem;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: -5px 0 25px rgba(0, 0, 0, 0.1);
     }
 
     .navContent.active {
         right: 0;
     }
 
-    .logoContainer {
-        margin: 0 auto;
+    .navContent.active + .menuButton {
+        color: white;
     }
-
+    
     .navLinks {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+        color: white;
         width: 100%;
+        margin-top: 12vh;
+        gap: 0.5rem;
     }
 
     .navLinks li {
         width: 100%;
         text-align: center;
         padding: 1rem;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
+        margin: 0.3rem 0;
+        border-radius: 12px;
+        transition: all 0.2s ease;
+        border: none;
+    }
+
+    .navLinks li:hover {
+        background-color: rgba(255, 128, 0, 0.1);
+    }
+
+    .navLinks li a {
+        font-weight: 600;
+        font-size: 2rem;
+        display: block;
+        width: 100%;
+        color: white;
+    }
+
+    .navLinks li a::after {
+        display: none;
     }
 
     .languageSwitch {
-        margin-top: 2rem;
+        margin-top: 3rem;
+        padding: 0.4rem 0.8rem;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .languageOption {
+        padding: 0.3rem 0.8rem;
+        font-size: 1rem;
     }
 }
 
-@media (max-width: 480px) {
-    .navbar {
-        padding: 0.4rem 1rem;
-    }
+.hidden {
+    transform: translateY(-100%);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-    .logo {
-        width: 40px;
-        height: 40px;
-    }
+.visible {
+    transform: translateY(0);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }

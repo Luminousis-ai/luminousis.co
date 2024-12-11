@@ -1,0 +1,22 @@
+.investorRelations {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.financialReports, .contact {
+    margin-top: 20px;
+}
+
+h1, h2 {
+    color: #4417C1;
+}
+
+a {
+    color: #ff8000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+} 

@@ -1,6 +1,6 @@
 .aboutSection {
     padding: 80px 0;
-    background-color: #f8f9fa;
+    background-color: #F1E6D8;
 }
 
 .container {
@@ -10,10 +10,10 @@
 }
 
 .title {
-    font-size: 2.5rem;
-    color: #4417C1;
+    font-size: 4rem;
+    color: #333 !important;
     text-align: center;
-    margin-bottom: 40px;
+    margin: 5vh;
 }
 
 .content {
@@ -22,7 +22,7 @@
 }
 .textContainer {
     max-width: fit-content;
-    background-color: white;
+    background-color: #fdfcf3;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);

@@ -1,0 +1,35 @@
+.marketSizeSection {
+    /* Add styles for the section */
+    text-align: center; /* Center the title */
+}
+
+.description {
+    /* Add styles for the p element */
+    margin-inline: 25vh; /* Space between text and image */
+}
+
+.image {
+    max-width: 70vh; /* Image size */
+}
+
+.citation {
+    font-size: 0.9rem; /* Adjust font size for citation */
+    color: gray; /* Change color for citation */
+    margin-top: 1rem; /* Space above citation */
+    margin-bottom: 3vh;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stack elements on mobile */
+    }
+
+    .description {
+        margin-bottom: 3vh; /* Space below description */
+        margin-inline: 3vh; 
+    }
+
+    .image {
+        max-width: 85%; /* Adjust image size for mobile */
+    }
+}

@@ -13,12 +13,14 @@ const WelcomeSection = () => {
             <div className={styles.container}>
                 <img 
                     src={logo} 
-                    alt="Lis.Ai Logo" 
+                    alt="Lis AI Logo" 
                     className={styles.logo}
                     loading="lazy"
                 />
-                <h1 className={`${styles.title} ${styles.customFont}`}>Lis.Ai</h1>
-                <p className={styles.subtitle}>{t.welcome.title}</p>
+                <h1>
+                    <strong>Lis AI</strong>
+                    <span className={styles.subtitle}> {t.welcome.title} </span>
+                </h1>
                 <p className={styles.description}>{t.welcome.description}</p>
             </div>
         </section>

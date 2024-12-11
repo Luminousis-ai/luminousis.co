@@ -1,52 +1,123 @@
 .contactSection {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: #4417C1;
-    color: white;
+    padding: 6rem 0;
+    background: #F1E6D8;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.header {
     text-align: center;
+    margin-bottom: 4rem;
 }
 
-.sectionTitle {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #ff8000;
+.title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background:  #333;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.contactList {
-    list-style: none;
-    padding: 0;
+.description {
+    font-size: 1.25rem;
+    color: #64748b;
+    max-width: 36rem;
+    margin: 0 auto;
+    line-height: 1.75;
 }
 
-.contactItem a {
-    color: white; 
-    transition: color 0.3s ease; 
+.methodsGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    padding: 0 1rem;
 }
 
-.contactItem a:hover {
-    color: #ff8000; 
+@media (min-width: 768px) {
+    .methodsGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-.contactList li {
-    font-size: 1.2em;
-    margin-bottom: 15px;
+.methodCard {
+    background: #fdfcf3;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
 }
 
-.socialMedia {
-    margin-bottom: 15px;
+.methodCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #ff8000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
 }
 
-.socialMedia a {
+.methodCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.2), 0 8px 10px -5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.methodCard:hover::before {
+    transform: scaleX(1);
+}
+
+.iconWrapper {
+    background: #F1E6D8;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.iconWrapper svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.methodCard:hover .iconWrapper {
+    background: #ff8000;
+}
+
+.methodCard:hover .iconWrapper svg {
     color: white;
-    margin: 0 10px;
-    font-size: 1.5em; 
+}
+
+.methodLabel {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.methodValue {
+    color: #333;
+    font-size: 1rem;
     transition: color 0.3s ease;
-}
-
-.socialMedia a:hover {
-    color: #ff8000; 
-}
-
-.copyright {
-    font-size: 0.9rem;
-    padding-bottom: 5px;
 }

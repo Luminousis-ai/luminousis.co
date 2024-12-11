@@ -1,13 +1,6 @@
 .roadmapSection {
     padding: 4rem 2rem;
-    background-color: #f8f9fa;
-}
-
-.sectionTitle {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: #4417C1;
+    background-color: #F1E6D8;
 }
 
 .timelineContainer {
@@ -35,7 +28,7 @@
 }
 
 .timelineContent {
-    background: #fff;
+    background: #fdfcf3;
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
     padding: 1.5rem;
@@ -62,34 +55,6 @@
 .description {
     font-size: 1rem;
     color: #555;
-}
-
-.infoBox {
-    max-width: 800px;
-    margin: 3rem auto 0;
-    padding: 2rem;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-}
-
-.infoBox h3 {
-    font-size: 1.5rem;
-    color: #4417C1;
-    margin-bottom: 1rem;
-}
-
-.infoBox ul {
-    padding-left: 1.5rem;
-}
-
-.infoBox li {
-    margin-bottom: 0.5rem;
-    color: #555;
-}
-
-.infoBox li::marker {
-    color: #ff8000;
 }
 
 @media (min-width: 768px) {

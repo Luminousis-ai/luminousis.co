@@ -10,12 +10,11 @@ const AboutSection = () => {
     return (
         <section id="about" className={styles.aboutSection}>
             <div className={styles.container}>
-                <h2 className={styles.title}>{t.about.title}</h2>
+                <h1 className={styles.title}>{t.about.title}</h1>
                 <div className={styles.content}>
                     <div className={styles.textContainer}>
                         <p>{t.about.content1}</p>
                         <p>{t.about.content2}</p>
-                        <p>{t.about.content3}</p>
                     </div>
                 </div>
             </div>

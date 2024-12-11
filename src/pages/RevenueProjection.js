@@ -92,7 +92,6 @@ const RevenueProjection = () => {
                 monthCampaignUsers += newUsers;
                 totalMarketingCost += calculateMarketingCost(campaign, campaign.duration);
             });
-        
         campaignUsers += monthCampaignUsers;
         
         // Calculate total users with rounding

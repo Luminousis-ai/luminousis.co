@@ -1,19 +1,24 @@
 .welcomeSection {
-    background-color: #f8f9fa;
-    padding: 153px 0;
+    background-color: #F1E6D8;
+    padding: 80px 0;
     text-align: center;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .logo {
     width: 100px;
     height: auto;
     margin-bottom: 20px;
+    object-fit: cover;
+    border: 3px solid #ff8000;
+    padding: 2px;
+    background-color: white;
+    border-radius: 100%;
 }
 
 .title {
@@ -23,9 +28,11 @@
 }
 
 .subtitle {
-    font-size: 1.5rem;
+    display: block;
+    font-size: 1.8rem;
     color: #ff8000;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    
 }
 
 .description {
@@ -35,20 +42,6 @@
     line-height: 1.6;
 }
 
-.ctaButton {
-    background-color: #4417C1;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.ctaButton:hover {
-    background-color: #3a1499;
-}
 .customFont {
     font-weight: bold;
     font-size: 4rem;

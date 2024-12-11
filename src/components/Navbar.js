@@ -1,25 +1,44 @@
 import React, { useState, useEffect } from 'react';
-import { scrollToSection } from '../utils/scrollToSection';
 import { useLanguage } from '../contexts/LanguageContext';
 import { translations } from '../translations';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import logo from '../assets/logo.svg';
 import styles from '../styles/Navbar.module.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const { language, toggleLanguage } = useLanguage();
     const t = translations[language];
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
 
     useEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.scrollY > 50);
+            const currentScrollY = window.scrollY;
+            const scrollDifference = Math.abs(currentScrollY - lastScrollY);
+            
+            // Always show navbar when at the top
+            if (currentScrollY === 0) {
+                setIsVisible(true);
+            } 
+            // Only change visibility if scrolled more than 100px
+            else if (scrollDifference > 100) {
+                if (currentScrollY < lastScrollY) {
+                    setIsVisible(true);
+                } else {
+                    setIsVisible(false);
+                }
+                setLastScrollY(currentScrollY);
+            }
+            
+            setScrolled(currentScrollY > 50);
         };
 
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    }, [lastScrollY]);
 
     useEffect(() => {
         if (isMenuOpen) {
@@ -57,49 +76,48 @@ const Navbar = () => {
         };
     }, [isMenuOpen]);
 
-    const handleNavClick = (section) => {
-        scrollToSection(section);
-        setIsMenuOpen(false);
-    };
-
     return (
-        <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
-            <div className={styles.logoContainer}>
-                <img 
-                    src={logo} 
-                    alt="Lis.Ai Logo" 
-                    className={styles.logo} 
-                    onClick={() => handleNavClick('welcome')} 
-                    loading="lazy"
-                />
-            </div>
-
+        <nav className={`
+            ${styles.navbar} 
+            ${scrolled ? styles.scrolled : ''} 
+            ${isVisible ? styles.visible : styles.hidden}
+        `}>
             <button 
                 className={styles.menuButton}
                 onClick={toggleMenu}
-                aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
-                aria-expanded={isMenuOpen}
+                aria-label="Toggle menu"
             >
                 {isMenuOpen ? <FaTimes /> : <FaBars />}
             </button>
 
-            <div 
-                className={`${styles.navContent} ${isMenuOpen ? styles.active : ''}`}
-                role="navigation"
-                aria-label="Main navigation"
-            >
+            <div className={styles.logoContainer}>
+                <Link to="/" onClick={() => setIsMenuOpen(false)}>
+                    <img 
+                        src={logo} 
+                        alt="Lis AI Logo" 
+                        className={styles.logo} 
+                        loading="lazy"
+                    />
+                </Link>
+            </div>
+
+            <div className={`${styles.navContent} ${isMenuOpen ? styles.active : ''}`}>
                 <ul className={styles.navLinks}>
-                    {['about', 'product', 'roadmap', 'contact'].map((section) => (
-                        <li 
-                            key={section}
-                            onClick={() => handleNavClick(section)}
-                            role="menuitem"
-                            tabIndex={0}
-                            onKeyPress={(e) => e.key === 'Enter' && handleNavClick(section)}
-                        >
-                            {t.nav[section]}
-                        </li>
-                    ))}
+                    <li>
+                        <Link to="/" onClick={() => setIsMenuOpen(false)}>
+                            {t.nav.home}
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/about" onClick={() => setIsMenuOpen(false)}>
+                            {t.nav.about}
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+                            {t.nav.contact}
+                        </Link>
+                    </li>
                 </ul>
                 
                 <div 
@@ -113,7 +131,6 @@ const Navbar = () => {
                     <span className={`${styles.languageOption} ${language === 'en' ? styles.languageOptionActive : ''}`}>
                         EN
                     </span>
-                    <span style={{ margin: '0 4px', color: '#4417C1' }}>/</span>
                     <span className={`${styles.languageOption} ${language === 'tr' ? styles.languageOptionActive : ''}`}>
                         TR
                     </span>
