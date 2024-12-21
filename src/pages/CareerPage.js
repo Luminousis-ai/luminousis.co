@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/CareerPage.module.css'; // Ensure you create this CSS file for styling
+import styles from '../styles/CareerPage.module.css'; 
 import { useLanguage } from '../contexts/LanguageContext';
 import { translations } from '../translations';
 import { FaExclamationCircle } from "react-icons/fa";

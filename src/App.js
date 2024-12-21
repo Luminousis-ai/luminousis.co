@@ -6,7 +6,6 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import RevenueProjection from './pages/RevenueProjection';
-import InvestorRelations from './pages/Investor';
 import CareerPage from './pages/CareerPage';
 import NotFound from './pages/NotFound';
 import { LanguageProvider } from './contexts/LanguageContext';

@@ -1,19 +1,19 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import styles from '../styles/ProductSection.module.css';
 import { useLanguage } from '../contexts/LanguageContext';
 import { translations } from '../translations';
 
-import demoGif from '../assets/demo.gif';
-import mockupImage from '../assets/mockup.webp';
+import demoGif from '../assets/product/demo.gif';
+import mockupImage from '../assets/product/mockup.webp';
 
-import product1 from '../assets/1.webp';
-import product2 from '../assets/2.webp';
-import product3 from '../assets/3.webp';
-import product4 from '../assets/4.webp';
-import product5 from '../assets/5.webp';
-import product6 from '../assets/6.webp';
-import product7 from '../assets/7.webp';
-import product8 from '../assets/8.webp';
+import product1 from '../assets/product/1.webp';
+import product2 from '../assets/product/2.webp';
+import product3 from '../assets/product/3.webp';
+import product4 from '../assets/product/4.webp';
+import product5 from '../assets/product/5.webp';
+import product6 from '../assets/product/6.webp';
+import product7 from '../assets/product/7.webp';
+import product8 from '../assets/product/8.webp';
 
 const ProductVideoSection = () => {
     const { language } = useLanguage();

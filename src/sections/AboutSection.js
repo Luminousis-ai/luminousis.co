@@ -14,7 +14,6 @@ const AboutSection = () => {
                 <div className={styles.content}>
                     <div className={styles.textContainer}>
                         <p>{t.about.content1}</p>
-                        <p>{t.about.content2}</p>
                     </div>
                 </div>
             </div>

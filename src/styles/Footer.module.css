@@ -76,6 +76,15 @@
     font-size: 1.1rem;
 }
 
+.footerNavTitle {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #4417C1; 
+    text-decoration-thickness: 2px; 
+    text-underline-offset: 4px; 
+    transition: text-decoration-color 0.3s ease, text-decoration-thickness 0.3s ease;
+}
+
 .footerNav {
     display: flex;
     flex-direction: column;
@@ -94,10 +103,18 @@
     color: #4417C1;
 }
 
+.contactTitle {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #4417C1; 
+    text-decoration-thickness: 2px; 
+    text-underline-offset: 4px; 
+    transition: text-decoration-color 0.3s ease, text-decoration-thickness 0.3s ease;
+}
+
 .contactInfo {
     display: flex;
     flex-direction: column;
-    gap: 12px;
 }
 
 .contactInfo p {
@@ -113,6 +130,15 @@
 
 .contactInfo a:hover {
     color: #4417C1;
+}
+
+.followUsTitle {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #4417C1; 
+    text-decoration-thickness: 2px; 
+    text-underline-offset: 4px; 
+    transition: text-decoration-color 0.3s ease, text-decoration-thickness 0.3s ease;
 }
 
 .socialLinks {

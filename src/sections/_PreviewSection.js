@@ -7,7 +7,7 @@ import previewContent from '../assets/1.webp';
 const PreviewSection = () => {
   const sectionRef = useRef(null);
   const mockupRef = useRef(null);
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false); 
 
   // Ekran boyutunu kontrol etmek için
   useEffect(() => {

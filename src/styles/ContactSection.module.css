@@ -1,7 +1,7 @@
 .contactSection {
     padding: 6rem 0;
     background: #F1E6D8;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
 }
@@ -40,12 +40,6 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
     padding: 0 1rem;
-}
-
-@media (min-width: 768px) {
-    .methodsGrid {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
 
 .methodCard {
@@ -120,4 +114,10 @@
     color: #333;
     font-size: 1rem;
     transition: color 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .methodsGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
