@@ -4,6 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Lis AI | AI Powered Fashion Solutions</title>
+    <script>
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Lis AI offers visual search, virtual fitting room and social media integrated into these features using advanced AI">
     <meta name="keywords" content="virtual dressing room, virtual try-on for clothing, visual search for fashion, visual search for e-commerce, fashion technology, artificial intelligence, AI-powered fashion recommendations">
