@@ -1,53 +1,79 @@
-.videoSection {
-    padding: 4rem 2rem;
-    background-color: #f8f9fa;
-    text-align: center;
-}
-
-.sectionTitle {
-    font-size: 2.5rem;
-    color: #4417C1;
-    margin-bottom: 2rem;
-}
-
-.videoWrapper {
-    width: 350px;
-    height: 757px;
-    margin: 0 auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    border-radius: 38px;
-    border-radius: 30px;
-    overflow: hidden;
+.section {
+    padding: 4rem 1rem;
+    background: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .mockupContainer {
     position: relative;
-}
-
-.videoWrapper video {
+    width: 375px; /* iPhone 14 pro genişlik */
+    max-width: 90%;
+    height: auto;
+  }
+  
+  .mockupContainer::before {
+    content: '';
+    display: block;
+    padding-top: 207.5%; /* Mockup görselinin en-boy oranı */
+  }
+  
+  .mockupContainer::after {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    background-image: url('../assets/product/iphone-mockup.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 2;
+  }
+  
+  .screenArea {
+    position: absolute;
+    top: 12.5%; /* Mockup görselindeki ekran alanına göre ayarlayın */
+    left: 7.5%;
+    width: 85%;
+    height: 82%;
+    border-radius: 40px; /* iPhone ekran yuvarlaklığına göre ayarla */
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .video {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-}
-
-@media (max-width: 768px) {
-    .videoWrapper {
-        width: 300px;
-        height: 649px;
-        max-width: 90vw;
-        max-height: calc(90vw * 2.164);
-    }
-}
-
-@media (max-width: 480px) {
-    .videoWrapper {
-        width: 280px;
-        height: 606px;
-        max-width: 85vw;
-        max-height: calc(85vw * 2.164);
+    object-position: center;
+    transform: scale(1.02); /* Kenar boşluklarını kapatmak için */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .mockupContainer {
+      width: 320px;
     }
     
-    .sectionTitle {
-        font-size: 2rem;
+    .screenArea {
+      top: 11.5%;
+      height: 81%;
+      border-radius: 35px;
     }
-}
+  }
+  
+  @media (max-width: 480px) {
+    .mockupContainer {
+      width: 280px;
+    }
+    
+    .screenArea {
+      top: 10.5%;
+      height: 80%;
+      border-radius: 30px;
+    }
+  }

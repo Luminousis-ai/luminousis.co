@@ -5,7 +5,9 @@
 
 .title {
     font-size: 4rem;
-    color: #4417C1;
+    color: #333 !important;
+    text-align: center;
+    margin: 5vh;
 }
 
 .noListings {

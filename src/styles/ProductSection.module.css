@@ -34,7 +34,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F1E6D8; 
+    background-color: #F1E6D8;
+    pointer-events: none; /* Yeni eklenen */
 }
 
 .mockupImage {
@@ -43,6 +44,7 @@
     object-fit: cover;
     position: relative;
     z-index: 2;
+    pointer-events: none; /* Yeni eklenen */
 }
 
 .contentContainer {
@@ -50,13 +52,12 @@
     top: 2.1%;
     left: 5%;
     right: 5%;
-    bottom: 2.5%;
+    bottom: 2.2%;
     overflow: hidden;
     border-radius: calc(2% / (495 / 1024));
     background-color: #F1E6D8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: 1; /* Yeni eklenen */
+    pointer-events: auto; /* Yeni eklenen */
 }
 
 .content {

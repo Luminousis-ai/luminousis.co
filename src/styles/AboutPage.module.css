@@ -1,0 +1,51 @@
+.aboutSection {
+    width: 100%;
+    background-color: #F1E6D8;
+    padding: 2rem var(--section-padding, 2rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cofoundersContainer {
+    width: 100%;
+    max-width: var(--max-width, 1400px);
+    margin: 0 auto;
+    display: grid;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile - single card */
+@media (max-width: 639px) {
+    .cofoundersContainer {
+        grid-template-columns: 1fr; /* Tek kart */
+        justify-content: center; /* Tam ortala */
+        align-items: center;
+    }
+}
+
+/* Tablet (portrait) - two cards */
+@media (min-width: 640px) and (max-width: 1023px) {
+    .cofoundersContainer {
+        grid-template-columns: repeat(2, 1fr); /* İki kart */
+        justify-content: center; /* Tam ortala */
+        gap: 2rem; /* Aralığı ayarla */
+    }
+}
+
+/* Desktop - four cards */
+@media (min-width: 1024px) {
+    .cofoundersContainer {
+        grid-template-columns: repeat(4, 1fr); /* Dört kart */
+        justify-content: center; /* Tam ortala */
+        gap: 3rem;
+    }
+}
+
+/* Ortalamayı güçlendirmek için bir destek: grid-item ortalanması */
+.cofoundersContainer > * {
+    justify-self: center;
+    align-self: center;
+}

@@ -3,8 +3,8 @@ import styles from '../styles/ProductSection.module.css';
 import { useLanguage } from '../contexts/LanguageContext';
 import { translations } from '../translations';
 
-import demoGif from '../assets/product/demo.gif';
-import mockupImage from '../assets/product/mockup.webp';
+import demoVideo from '../assets/product/demo.mp4';
+import mockupImage from '../assets/product/iphone-mockup.png';
 
 import product1 from '../assets/product/1.webp';
 import product2 from '../assets/product/2.webp';
@@ -53,14 +53,24 @@ const ProductVideoSection = () => {
                                 src={mockupImage} 
                                 alt="Device Mockup"
                                 className={styles.mockupImage}
+                                loading="lazy"
+                                decoding="async"
                             />
                             <div className={styles.contentContainer}>
-                                <img 
-                                    src={demoGif}
-                                    alt="Product demonstration"
-                                    loading="lazy"
+                                <video
                                     className={styles.content}
-                                />
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    title="Product demonstration video"
+                                    preload="auto"
+                                    aria-hidden="true"
+                                    controls
+                                >
+                                    <source src={demoVideo} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
                         </div>
                     </div>
@@ -79,6 +89,9 @@ const ProductVideoSection = () => {
                                                 src={image} 
                                                 alt={`${group.subtitle} screenshot ${imgIndex + 1}`}
                                                 loading="lazy"
+                                                decoding="async"
+                                                width="400"
+                                                height="800"
                                             />
                                         </div>
                                     ))}
