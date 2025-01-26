@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.dc9870c2.css",
-    "main.js": "/static/js/main.70d27594.js",
-    "static/media/demo.gif": "/static/media/demo.8833bab5f8bfe317c631.gif",
+    "main.css": "/static/css/main.d7394230.css",
+    "main.js": "/static/js/main.26b7a7d8.js",
+    "static/media/demo.mp4": "/static/media/demo.8e44f0f03116ded3c04d.mp4",
     "static/media/market_size.webp": "/static/media/market_size.7591ed031c4f4fb24357.webp",
     "static/media/eren_yasa.webp": "/static/media/eren_yasa.a34f5b6df3bef6c7d3b9.webp",
     "static/media/tarik_bacak.webp": "/static/media/tarik_bacak.864193701ecad3a38a1a.webp",
     "static/media/esad_ugur.webp": "/static/media/esad_ugur.a1a9b70541d5fbdd31b9.webp",
     "static/media/h_fatih_durkaya.webp": "/static/media/h_fatih_durkaya.6012e2e3db89a2c98b1d.webp",
-    "static/media/yusuf_aslan.webp": "/static/media/yusuf_aslan.a3fa478c2ebc87a95b28.webp",
     "static/media/7.webp": "/static/media/7.326a5a4acebf9d559b2f.webp",
     "static/media/itu_logo.png": "/static/media/itu_logo.90846337627b077872c9.png",
     "static/media/2.webp": "/static/media/2.3965fd73a41a58b35c13.webp",
@@ -16,16 +15,16 @@
     "static/media/4.webp": "/static/media/4.99766d03737ee53684a3.webp",
     "static/media/3.webp": "/static/media/3.5e32d23135ece9afac86.webp",
     "static/media/6.webp": "/static/media/6.03cfafefe279f1fb502a.webp",
-    "static/media/mockup.webp": "/static/media/mockup.fabadb92d2a6f2e1eedb.webp",
+    "static/media/iphone-mockup.png": "/static/media/iphone-mockup.fabadb92d2a6f2e1eedb.png",
     "static/media/8.webp": "/static/media/8.71b8d94b26207e5861b3.webp",
     "static/media/5.webp": "/static/media/5.2d0bacb3ef5be6deb8b7.webp",
     "static/media/logo.svg": "/static/media/logo.ca50b603295d0350bf49f19c71e7c206.svg",
     "index.html": "/index.html",
-    "main.dc9870c2.css.map": "/static/css/main.dc9870c2.css.map",
-    "main.70d27594.js.map": "/static/js/main.70d27594.js.map"
+    "main.d7394230.css.map": "/static/css/main.d7394230.css.map",
+    "main.26b7a7d8.js.map": "/static/js/main.26b7a7d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc9870c2.css",
-    "static/js/main.70d27594.js"
+    "static/css/main.d7394230.css",
+    "static/js/main.26b7a7d8.js"
   ]
 }
